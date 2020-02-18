@@ -29,8 +29,6 @@
 
 import PackageDescription
 
-//let package = Package(
-
 let package = Package (
     name: "AlamofireObjectMapper",
     products: [
@@ -39,11 +37,11 @@ let package = Package (
             targets: ["AlamofireObjectMapper"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire", from: "5.0.0-rc.3"),
-        .package(url: "https://github.com/tristanhimmelman/ObjectMapper", from: "3.5.1")],
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/tristanhimmelman/ObjectMapper", .upToNextMajor(from: "3.5.1"))],
     targets: [
         .target(
             name: "AlamofireObjectMapper",
-            dependencies: [])
+            path: "AlamofireObjectMapper")
     ]
 )
