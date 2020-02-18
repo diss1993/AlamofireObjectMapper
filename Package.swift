@@ -37,7 +37,7 @@ let package = Package (
             targets: ["AlamofireObjectMapper"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.1")),
         .package(url: "https://github.com/tristanhimmelman/ObjectMapper", .upToNextMajor(from: "3.5.1"))],
     targets: [
         .target(
